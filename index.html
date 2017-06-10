@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- means IE should use the latest (edge) version of its rendering engine -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"><!-- browser will render width of the page to width of its own screen -->
+	<title>Calculator</title>
+	<link rel="icon" href="favicon.png">
+
+	<!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto" rel="stylesheet">
+	<!-- Custom -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<div class="container">
+
+			<h2>Calculator</h2>
+
+			<div id="visor">
+				<div id="digit">0</div>
+				<div id="calc">0</div>
+			</div><!-- /visor-->
+			
+			<div id="pad">
+				<div class="row">
+					<button class="btn op clear-entry">CE</button>
+					<button class="btn op clear">C</button>
+					<button class="btn op arithmetic divide-op">/</button>
+					<button class="btn op arithmetic times-op">x</button>
+				</div><!-- /row-->
+
+				<div class="row">
+					<button class="btn num">7</button>
+					<button class="btn num">8</button>
+					<button class="btn num">9</button>
+					<button class="btn op arithmetic minus-op">-</button>
+				</div><!-- /row-->
+
+				<div class="row">
+					<button class="btn num">4</button>
+					<button class="btn num">5</button>
+					<button class="btn num">6</button>
+					<button class="btn op arithmetic add-op">+</button>
+				</div><!-- /row-->
+
+				<div class="row">
+					<button class="btn num">1</button>
+					<button class="btn num">2</button>
+					<button class="btn num">3</button>
+					
+				</div><!-- /row-->
+
+				<div class="row">
+					<button class="btn op equals-op">=</button>
+					<button class="btn num zero">0</button>
+					<button class="btn num dot">.</button>
+					
+				</div><!-- /row-->
+			</div><!-- /pad-->
+
+		</div><!-- /container-->
+
+	<!--********** SCRIPTS **********-->
+	<!-- main.js -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

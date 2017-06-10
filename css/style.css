@@ -1,0 +1,143 @@
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-image: url('../img/orange1.jpg');
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	/*position in center of page*/
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+	width: 400px;
+	height: 470px;
+ 	opacity: 0.7;
+    filter: alpha(opacity=70);  /*For IE8 and earlier*/ 
+	background-color: #ebebeb;
+	border-radius: 10px;
+}
+
+h2{
+	text-align: center;
+	font-family: 'Press Start 2P', cursive;
+	text-transform: uppercase;
+}
+
+#visor{
+	margin: 0 auto;
+	width: 350px;
+	height: 100px;
+	background-color: #fff;
+	position: relative;
+	margin-bottom: 30px;
+	
+}
+
+#digit{
+	font-size: 30px;
+	position: absolute; 
+	top: 22px;
+	right: 8px;
+	font-family: 'Press Start 2P', cursive;
+}
+
+#digit.changed{
+	font-size: 20px;
+}
+
+#calc{
+	font-size: 20px;
+	position: absolute; 
+	bottom: 12px;
+	right: 15px;
+	color: #8b8b8b;
+}
+
+#pad{
+	width: 350px;
+	margin: 0 auto;
+}
+
+/* Reset `button` default styles */
+input[type="button"],
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-appearance: button; /* for input */
+    -webkit-user-select: none; /* for button */
+	-moz-user-select: none;
+	-ms-user-select: none;
+	outline: none;
+	margin: 0;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.row{
+	position: relative;
+}
+.btn{
+	cursor: pointer;
+	width: 25%;
+	height: 50px;
+	position: relative;
+	float:left;
+}
+
+.btn:hover{
+	background-color: #c7c7c7;
+}
+
+.btn:active{
+	background-color: #b8b8b8;
+}
+
+.zero, .dot{
+	width: 37.5%;
+}
+
+.equals-op{
+	float: right;
+	height: 100px;
+}
+
+.op{
+	background-color: #dedede;
+}
+
+.num{
+	background-color: #fff;
+}
+
+.num:hover{
+	background-color: #e3e3e3;
+}
+
+.num:active{
+	background-color: #d1d1d1;
+}
+
+@media screen and (max-width: 420px) {
+
+	.container{
+		height: 444px;
+	}
+   .container, #visor, #pad{
+		width: 100%;
+	}
+}
