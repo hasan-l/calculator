@@ -62,8 +62,13 @@
 		</div><!-- /container-->
 
 	<!--********** SCRIPTS **********-->
-	<!-- Polyfill for classList-->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+	<script type="text/javascript">
+		/* Microsoft Internet Explorer detected in. */
+		if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
+   		alert("Internet Explorer browsers 6-11 are not supported!")
+		}
+
+	</script>
 	<!-- main.js -->
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
