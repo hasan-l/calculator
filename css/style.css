@@ -132,12 +132,19 @@ button {
 	background-color: #d1d1d1;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 380px) {
 
-	.container{
+/*	.container{
 		height: 444px;
-	}
+	}*/
    .container, #visor, #pad{
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+
+	body{
+		background-image: url('../img/dark-triangles.png');
 	}
 }
