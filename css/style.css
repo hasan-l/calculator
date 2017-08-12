@@ -34,7 +34,7 @@ h2{
 	text-transform: uppercase;
 }
 
-#visor{
+#screen{
 	margin: 0 auto;
 	width: 350px;
 	height: 100px;
@@ -137,7 +137,7 @@ button {
 /*	.container{
 		height: 444px;
 	}*/
-   .container, #visor, #pad{
+   .container, #screen, #pad{
 		width: 100%;
 	}
 }
